@@ -1,0 +1,113 @@
+.sidebar-contact{
+  position:fixed;
+  top:70%;
+  left:-320px;
+  transform:translateY(-50%);
+  width:320px;
+  height:auto;
+  padding:21px;
+  background:#fff;
+  box-sizing:border-box;
+  transition:0.5s;
+  z-index: 555555;
+}
+.sidebar-contact.active{
+  left:0;
+}
+.sidebar-contact input,
+.sidebar-contact textarea{
+  width:100%;
+  height:36px;
+  padding:5px;
+  margin-bottom:10px;
+  box-sizing:border-box;
+  border:1px solid rgba(0,0,0,.5);
+  outline:none;
+}
+.sidebar-contact h2{
+  margin:0 0 20px;
+  padding:0;
+}
+.sidebar-contact textarea{
+  height:60px;
+  resize:none;
+}
+.sidebar-contact input[type="submit"]{
+  background:#6558d1;
+  color:#fff;
+  cursor:pointer;
+  border:none;
+  font-size:18px;
+}
+
+ 
+.toggle{
+  position:absolute;
+  height:70px;
+  width:40px;
+  text-align:center;
+  cursor:pointer;
+  background:#7d71dc;
+  top:0;
+  right:-40px;
+  line-height:48px;
+  color: #fff;
+}
+.toggle:before{
+  content:'Enquiry';
+  font-family:fontAwesome;
+  font-size:18px;
+  color:#fff;
+  display: inline-block;
+  padding-left: 8px;
+  white-space: nowrap;
+    /* this is for shity "non IE" browsers
+       that dosn't support writing-mode */
+    -webkit-transform: translate(2.5em,0) rotate(90deg);
+       -moz-transform: translate(2.5em,0) rotate(90deg);
+         -o-transform: translate(2.5em,0) rotate(90deg);
+            transform: translate(2.5em,0) rotate(90deg);
+    -webkit-transform-origin: 0 0;
+       -moz-transform-origin: 0 0;
+         -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+   /* IE9+ */
+   -ms-transform: none;
+   -ms-transform-origin: none;
+   /* IE8+ */
+   -ms-writing-mode: tb-rl;
+   /* IE7 and below */
+   *writing-mode: tb-rl;
+}
+
+}
+.toggle.active:before{
+  content:'\f00d';
+}
+@media(max-width:768px)
+{
+  .sidebar-contact{
+    width:100%;
+    height:100%;
+    left:-100%;
+  }
+  .sidebar-contact .toggle{
+    top:50%;
+    transform:translateY(-50%);
+    transition:0.5s;
+  }
+  .sidebar-contact.active .toggle
+  {
+    top:0;
+    right:0;
+    transform:translateY(0);
+  }
+  .scroll{
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+  }
+  .content{
+    padding:50px 50px;
+  }
+}
