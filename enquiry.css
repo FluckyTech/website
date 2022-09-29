@@ -55,7 +55,7 @@
 }
 .toggle:before{
   content:'Enquiry';
-  font-family:fontAwesome;
+  font-family:serif;
   font-size:18px;
   color:#fff;
   display: inline-block;
