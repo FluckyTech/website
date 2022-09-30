@@ -21239,13 +21239,13 @@ h4.title-head a {
 
 /* stats */
 .w3_stats {
-  background: url(../images/map.png), var(--gradient-color), no-repeat, center;
+  background: url(map.png), var(--gradient-color), no-repeat, center;
   background-size: contain;
 }
 
 .counter i {
   color: #fff;
-  text-align: center;
+  text-align: center; 
   width: 80px;
   height: 80px;
   line-height: 80px;
